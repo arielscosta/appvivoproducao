@@ -7,12 +7,21 @@ while True:
         break
     else:
         print('Por favor, digite um nome válido')
-id = int (input ("RE: "))
-if id. isnumeric (): print ('Faça seus registros')
-else: print('Apenas números')
-atv = input ("Quantidade de serviços: ")
-atv_num = int(atv)
+while True: #Enquanto verdadeiro
+    id = input ('RE: ') #interação com usuário
+    if all(num.isnumeric() for num in id): #Se resposta for numerica ok
+        break #parar
+    else: #se nao
+        print('Por favor, digite apenas numeros') #informação ao usuário
+while True:
+    atv = input ("Quantidade de serviços: ")
+    if all(qtd.isnumeric () for qtd in atv):
+        break
+    else:
+       print('Por favor, digite apenas numeros') 
+atv_num = int or float(atv)
 resultado = 0
+tabela = input ('Deseja ver tabela de serviços e seus respectivos valores? Responda S ou N ' )
 print ("Serviços disponiveis")
 print (" Banda Avulsa (1)")
 print ("Banda mais linha (2)")
